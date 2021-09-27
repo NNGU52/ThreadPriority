@@ -6,16 +6,16 @@
 
 ## Интерфейс программы
 Потоки с одинаковым приоритетом:
-<p align="center"><img src="https://github.com/NNGU52/ThreadPriority/blob/main/screenshots/1.png"/></p>
+<p align="center"><img src="/screenshots/1.png"/></p>
 
 Потоки с разными приоритетами:
-<p align="center"><img src="https://github.com/NNGU52/ThreadPriority/blob/main/screenshots/2.png"/></p>
+<p align="center"><img src="/screenshots/2.png"/></p>
 
 Первый поток вызывает функцию Sleep(0) после каждой единицы работы. Видно, что его производительность упала почти до нуля. Из документации Microsoft:
 > A value of zero causes the thread to relinquish the remainder of its time slice to any other thread that is ready to run. If there are no other threads ready to run, the function returns immediately, and the thread continues execution.  
 >  
 > Windows XP/2000: A value of zero causes the thread to relinquish the remainder of its time slice to any other thread of equal priority that is ready to run. If there are no other threads of equal priority ready to run, the function returns immediately, and the thread continues execution. This behavior changed starting with Windows Server 2003.
-<p align="center"><img src="https://github.com/NNGU52/ThreadPriority/blob/main/screenshots/3.png"/></p>
+<p align="center"><img src="/screenshots/3.png"/></p>
 
 ### P.S.
 Visual Studio 2013, MFC
